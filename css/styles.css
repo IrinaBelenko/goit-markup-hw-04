@@ -182,6 +182,10 @@ button {
   text-align: center;
   padding-bottom: 188px;
   padding-top: 188px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
+  url(../images/hero_image.jpg);
+  background-size: cover;
+  background-color: var(--dark-header-color);
 }
 
 .hero-title {
