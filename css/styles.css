@@ -19,7 +19,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  /*display: flex;*/
 }
 .list-indent {
   column-gap: 24px;
@@ -190,9 +189,10 @@ button {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero_image.jpg);
-  background-size: cover;
+  background-size: 1440рх;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--dark-header-color);
-  background-attachment: fixed; 
 }
 
 .hero-title {
@@ -235,7 +235,28 @@ button {
 .feature-item {
   width: 264px;
 }
-
+.feature-item::before {
+  display: block;
+  content: "";
+  height: 112px;
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--logo-bottom-color);
+  margin-bottom: 8px;
+}
+.icon-antenna::before {
+  background-image: url(../images/icons/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/icons/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/icons/astronaut.svg);
+}
 /*What are we doing*/
 .section-our-works {
   padding-top: 120px;
@@ -288,7 +309,11 @@ button {
 .social-list-icon:focus {
   fill: var(--logo-bottom-color);
 }
-
+/*Customers*/
+.section-customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
 /*footer*/
 .footer {
   background: var(--dark-header-color);
