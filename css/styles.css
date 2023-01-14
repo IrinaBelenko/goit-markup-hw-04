@@ -7,6 +7,8 @@
   --focus-button-color: #404bbf;
   --footer-text-color: #e7e9fc;
   --logo-bottom-color: #f4f4fd;
+  --light-slate: #8E8F99;
+  --green: #31D0AA;
 }
 /*common styles*/
 body {
@@ -314,6 +316,14 @@ button {
   padding-top: 130px;
   padding-bottom: 120px;
 }
+
+.customer-list-icon {
+  fill: var(--light-slate);
+  border: 1px solid #8E8F99;
+border-radius: 4px;
+padding: 16px 32px;
+}
+
 /*footer*/
 .footer {
   background: var(--dark-header-color);
@@ -337,6 +347,36 @@ button {
 .studio-bottom {
   line-height: 1.17;
   color: var(--logo-bottom-color);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+.footer-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list-link:hover,
+.footer-list-link:focus {
+  background-color: var(--green);
+}
+
+.footer-list-icon {
+  fill: var(--light-text-color);
+}
+
+.footer-list-icon:hover,
+.footer-list-icon:focus {
+  fill: var(--logo-bottom-color);
 }
 
 /*Portfolio*/
