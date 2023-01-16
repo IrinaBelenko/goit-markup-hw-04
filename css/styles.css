@@ -459,10 +459,10 @@ button {
 }
 
 .our-works-item {
-  /*border: 1px solid #e7e9fc;*/
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   box-sizing: border-box;
-  flex-shrink: calc((100%-2 * 24) / 3);
+  /*flex-basis: calc((100%-48px) / 3);*/
+  flex-shrink: calc((100%-48px) / 3);
 }
 .our-works-link{
   display: block;
